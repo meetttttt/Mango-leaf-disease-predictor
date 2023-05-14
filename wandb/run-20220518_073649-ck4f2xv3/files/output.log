@@ -1,0 +1,431 @@
+
+^C
+'WANDB_MODE' is not recognized as an internal or external command,
+operable program or batch file.
+^C
+wandb: Currently logged in as: meettttt (use `wandb login --relogin` to force relogin)
+[34m[1mtrain: [39m[22mweights=yolov5\yolov5s.pt, cfg=, data=yolov5\my_data.yaml, hyp=yolov5\data\hyps\hyp.scratch-low.yaml, epochs=2, batch_size=16, imgsz=640, rect=False, resume=False, nosave=False, noval=False, noautoanchor=False, evolve=None, bucket=, cache=None, image_weights=False, device=, multi_scale=False, single_cls=False, optimizer=SGD, sync_bn=False, workers=8, project=yolov5\runs\train, name=exp, exist_ok=False, quad=False, cos_lr=False, label_smoothing=0.0, patience=100, freeze=[0], save_period=-1, local_rank=-1, entity=None, upload_dataset=False, bbox_interval=-1, artifact_alias=latest
+[34m[1mgithub: [39m[22m YOLOv5 is out of date by 128 commits. Use `git pull` or `git clone https://github.com/ultralytics/yolov5` to update.
+fatal: cannot change to 'C:\Users\Meet': No such file or directory
+YOLOv5  2022-3-28 torch 1.11.0+cpu CPU
+[34m[1mhyperparameters: [39m[22mlr0=0.01, lrf=0.01, momentum=0.937, weight_decay=0.0005, warmup_epochs=3.0, warmup_momentum=0.8, warmup_bias_lr=0.1, box=0.05, cls=0.5, cls_pw=1.0, obj=1.0, obj_pw=1.0, iou_t=0.2, anchor_t=4.0, fl_gamma=0.0, hsv_h=0.015, hsv_s=0.7, hsv_v=0.4, degrees=0.0, translate=0.1, scale=0.5, shear=0.0, perspective=0.0, flipud=0.0, fliplr=0.5, mosaic=1.0, mixup=0.0, copy_paste=0.0
+[34m[1mTensorBoard: [39m[22mStart with 'tensorboard --logdir yolov5\runs\train', view at http://localhost:6006/
+wandb: wandb version 0.12.16 is available!  To upgrade, please run:
+wandb:  $ pip install wandb --upgrade
+wandb: Tracking run with wandb version 0.12.11
+wandb: Run data is saved locally in C:\Users\Meet Nagadia\Yolo\Agriculture Leaves\wandb\run-20220518_073707-2hoe2vth
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run efficient-night-1
+wandb:  View project at https://wandb.ai/meettttt/train
+wandb:  View run at https://wandb.ai/meettttt/train/runs/2hoe2vth
+Overriding model.yaml nc=80 with nc=18
+                 from  n    params  module                                  arguments
+  0                -1  1      3520  models.common.Conv                      [3, 32, 6, 2, 2]
+  1                -1  1     18560  models.common.Conv                      [32, 64, 3, 2]
+  2                -1  1     18816  models.common.C3                        [64, 64, 1]
+  3                -1  1     73984  models.common.Conv                      [64, 128, 3, 2]
+  4                -1  2    115712  models.common.C3                        [128, 128, 2]
+  5                -1  1    295424  models.common.Conv                      [128, 256, 3, 2]
+  6                -1  3    625152  models.common.C3                        [256, 256, 3]
+  7                -1  1   1180672  models.common.Conv                      [256, 512, 3, 2]
+  8                -1  1   1182720  models.common.C3                        [512, 512, 1]
+  9                -1  1    656896  models.common.SPPF                      [512, 512, 5]
+ 10                -1  1    131584  models.common.Conv                      [512, 256, 1, 1]
+ 11                -1  1         0  torch.nn.modules.upsampling.Upsample    [None, 2, 'nearest']
+ 12           [-1, 6]  1         0  models.common.Concat                    [1]
+ 13                -1  1    361984  models.common.C3                        [512, 256, 1, False]
+ 14                -1  1     33024  models.common.Conv                      [256, 128, 1, 1]
+ 15                -1  1         0  torch.nn.modules.upsampling.Upsample    [None, 2, 'nearest']
+ 16           [-1, 4]  1         0  models.common.Concat                    [1]
+ 17                -1  1     90880  models.common.C3                        [256, 128, 1, False]
+ 18                -1  1    147712  models.common.Conv                      [128, 128, 3, 2]
+ 19          [-1, 14]  1         0  models.common.Concat                    [1]
+ 20                -1  1    296448  models.common.C3                        [256, 256, 1, False]
+ 21                -1  1    590336  models.common.Conv                      [256, 256, 3, 2]
+ 22          [-1, 10]  1         0  models.common.Concat                    [1]
+ 23                -1  1   1182720  models.common.C3                        [512, 512, 1, False]
+ 24      [17, 20, 23]  1     62031  models.yolo.Detect                      [18, [[10, 13, 16, 30, 33, 23], [30, 61, 62, 45, 59, 119], [116, 90, 156, 198, 373, 326]], [128, 256, 512]]
+Model summary: 270 layers, 7068175 parameters, 7068175 gradients, 16.0 GFLOPs
+Transferred 343/349 items from yolov5\yolov5s.pt
+Scaled weight_decay = 0.0005
+[34m[1moptimizer:[39m[22m SGD with parameter groups 57 weight (no decay), 60 weight, 60 bias
+[34m[1malbumentations: [39m[22mBlur(always_apply=False, p=0.01, blur_limit=(3, 7)), MedianBlur(always_apply=False, p=0.01, blur_limit=(3, 7)), ToGray(always_apply=False, p=0.01), CLAHE(always_apply=False, p=0.01, clip_limit=(1, 4.0), tile_grid_size=(8, 8))
+[34m[1mtrain: [39m[22mScanning 'C:\Users\Meet Nagadia\Yolo\Agriculture Leaves\dataset\labels\train.cache' images and labels... 1000 found, 0 missing, 0 empty, 0 corrupt: 100%|##########| 1000/1000 [00:00<?, ?it/s]
+[34m[1mtrain: [39m[22mScanning 'C:\Users\Meet Nagadia\Yolo\Agriculture Leaves\dataset\labels\train.cache' images and labels... 1000 found, 0 missing, 0 empty, 0 corrupt: 100%|##########| 1000/1000 [00:00<?, ?it/s]
+wandb: Currently logged in as: meettttt (use `wandb login --relogin` to force relogin)
+wandb: Currently logged in as: meettttt (use `wandb login --relogin` to force relogin)
+wandb: Currently logged in as: meettttt (use `wandb login --relogin` to force relogin)
+wandb: Currently logged in as: meettttt (use `wandb login --relogin` to force relogin)
+wandb: Currently logged in as: meettttt (use `wandb login --relogin` to force relogin)
+wandb: Currently logged in as: meettttt (use `wandb login --relogin` to force relogin)
+wandb: Currently logged in as: meettttt (use `wandb login --relogin` to force relogin)
+wandb: Currently logged in as: meettttt (use `wandb login --relogin` to force relogin)
+[34m[1mval: [39m[22mScanning 'C:\Users\Meet Nagadia\Yolo\Agriculture Leaves\dataset\labels\val.cache' images and labels... 313 found, 0 missing, 0 empty, 0 corrupt: 100%|##########| 313/313 [00:00<?, ?it/s]
+[34m[1mval: [39m[22mScanning 'C:\Users\Meet Nagadia\Yolo\Agriculture Leaves\dataset\labels\val.cache' images and labels... 313 found, 0 missing, 0 empty, 0 corrupt: 100%|##########| 313/313 [00:00<?, ?it/s]
+wandb: Currently logged in as: meettttt (use `wandb login --relogin` to force relogin)
+wandb: Currently logged in as: meettttt (use `wandb login --relogin` to force relogin)
+wandb: Currently logged in as: meettttt (use `wandb login --relogin` to force relogin)
+wandb: Currently logged in as: meettttt (use `wandb login --relogin` to force relogin)
+wandb: Currently logged in as: meettttt (use `wandb login --relogin` to force relogin)
+wandb: Currently logged in as: meettttt (use `wandb login --relogin` to force relogin)
+wandb: Currently logged in as: meettttt (use `wandb login --relogin` to force relogin)
+wandb: Currently logged in as: meettttt (use `wandb login --relogin` to force relogin)
+wandb: Currently logged in as: meettttt (use `wandb login --relogin` to force relogin)
+wandb: Currently logged in as: meettttt. Use `wandb login --relogin` to force relogin
+wandb: Currently logged in as: meettttt. Use `wandb login --relogin` to force relogin
+wandb: Currently logged in as: meettttt. Use `wandb login --relogin` to force relogin
+Plotting labels to yolov5\runs\train\exp10\labels.jpg...
+[34m[1mAutoAnchor: [39m[22m3.77 anchors/target, 0.998 Best Possible Recall (BPR). Current anchors are a good fit to dataset
+Image sizes 640 train, 640 val
+Using 8 dataloader workers
+Logging results to [1myolov5\runs\train\exp10
+Starting training for 2 epochs...
+     Epoch   gpu_mem       box       obj       cls    labels  img_size
+  0%|          | 0/63 [00:00<?, ?it/s]
+       0/1        0G    0.1225   0.03313   0.08587        54       640:   0%|          | 0/63 [00:20<?, ?it/s]
+       0/1        0G    0.1225   0.03313   0.08587        54       640:   2%|1         | 1/63 [00:23<24:09, 23.37s/it]
+       0/1        0G    0.1194   0.03644    0.0842        75       640:   2%|1         | 1/63 [00:36<24:09, 23.37s/it]
+       0/1        0G    0.1194   0.03644    0.0842        75       640:   3%|3         | 2/63 [00:36<17:45, 17.47s/it]
+       0/1        0G    0.1193   0.03496   0.08396        55       640:   3%|3         | 2/63 [00:47<17:45, 17.47s/it]
+       0/1        0G    0.1193   0.03496   0.08396        55       640:   5%|4         | 3/63 [00:47<14:33, 14.56s/it]
+       0/1        0G    0.1196   0.03375   0.08245        49       640:   5%|4         | 3/63 [00:58<14:33, 14.56s/it]
+       0/1        0G    0.1196   0.03375   0.08245        49       640:   6%|6         | 4/63 [00:58<12:44, 12.96s/it]
+       0/1        0G    0.1193   0.03387   0.08243        64       640:   6%|6         | 4/63 [01:08<12:44, 12.96s/it]
+       0/1        0G    0.1193   0.03387   0.08243        64       640:   8%|7         | 5/63 [01:08<11:37, 12.03s/it]
+       0/1        0G    0.1188   0.03433   0.08303        66       640:   8%|7         | 5/63 [01:19<11:37, 12.03s/it]
+       0/1        0G    0.1188   0.03433   0.08303        66       640:  10%|9         | 6/63 [01:19<11:00, 11.59s/it]
+       0/1        0G    0.1184   0.03406   0.08299        61       640:  10%|9         | 6/63 [01:30<11:00, 11.59s/it]
+       0/1        0G    0.1184   0.03406   0.08299        61       640:  11%|#1        | 7/63 [01:30<10:41, 11.45s/it]
+       0/1        0G    0.1175   0.03374   0.08284        52       640:  11%|#1        | 7/63 [01:42<10:41, 11.45s/it]
+       0/1        0G    0.1175   0.03374   0.08284        52       640:  13%|#2        | 8/63 [01:42<10:38, 11.61s/it]
+       0/1        0G     0.117   0.03351   0.08229        52       640:  13%|#2        | 8/63 [01:53<10:38, 11.61s/it]
+       0/1        0G     0.117   0.03351   0.08229        52       640:  14%|#4        | 9/63 [01:53<10:13, 11.36s/it]
+       0/1        0G    0.1171   0.03314   0.08196        52       640:  14%|#4        | 9/63 [02:03<10:13, 11.36s/it]
+       0/1        0G    0.1171   0.03314   0.08196        52       640:  16%|#5        | 10/63 [02:03<09:46, 11.07s/it]
+       0/1        0G    0.1165   0.03359   0.08207        68       640:  16%|#5        | 10/63 [02:14<09:46, 11.07s/it]
+       0/1        0G    0.1165   0.03359   0.08207        68       640:  17%|#7        | 11/63 [02:14<09:33, 11.03s/it]
+       0/1        0G     0.116   0.03345   0.08189        54       640:  17%|#7        | 11/63 [02:25<09:33, 11.03s/it]
+       0/1        0G     0.116   0.03345   0.08189        54       640:  19%|#9        | 12/63 [02:25<09:13, 10.85s/it]
+       0/1        0G    0.1158   0.03333   0.08202        57       640:  19%|#9        | 12/63 [02:35<09:13, 10.85s/it]
+       0/1        0G    0.1158   0.03333   0.08202        57       640:  21%|##        | 13/63 [02:35<08:55, 10.70s/it]
+       0/1        0G    0.1149   0.03331   0.08192        55       640:  21%|##        | 13/63 [02:46<08:55, 10.70s/it]
+       0/1        0G    0.1149   0.03331   0.08192        55       640:  22%|##2       | 14/63 [02:46<08:48, 10.78s/it]
+       0/1        0G    0.1142    0.0335   0.08173        63       640:  22%|##2       | 14/63 [02:59<08:48, 10.78s/it]
+       0/1        0G    0.1142    0.0335   0.08173        63       640:  24%|##3       | 15/63 [02:59<09:11, 11.49s/it]Exception in thread StatsThr:
+Traceback (most recent call last):
+  File "C:\Project\envs\Yolo\lib\threading.py", line 973, in _bootstrap_inner
+    self.run()
+  File "C:\Project\envs\Yolo\lib\threading.py", line 910, in run
+    self._target(*self._args, **self._kwargs)
+  File "C:\Project\envs\Yolo\lib\site-packages\wandb\sdk\internal\stats.py", line 133, in _thread_body
+    self.flush()
+  File "C:\Project\envs\Yolo\lib\site-packages\wandb\sdk\internal\stats.py", line 179, in stats
+    in_use_by_us = gpu_in_use_by_this_process(handle)
+  File "C:\Project\envs\Yolo\lib\site-packages\wandb\vendor\pynvml\pynvml.py", line 819, in nvmlDeviceGetHandleByIndex
+    _nvmlCheckReturn(ret)
+  File "C:\Project\envs\Yolo\lib\site-packages\wandb\vendor\pynvml\pynvml.py", line 310, in _nvmlCheckReturn
+    raise NVMLError(ret)
+wandb.vendor.pynvml.pynvml.NVMLError_Unknown: Unknown Error
+       0/1        0G    0.1136   0.03357   0.08146        62       640:  24%|##3       | 15/63 [03:15<09:11, 11.49s/it]
+       0/1        0G    0.1136   0.03357   0.08146        62       640:  25%|##5       | 16/63 [03:15<10:06, 12.90s/it]
+       0/1        0G    0.1133   0.03379   0.08122        73       640:  25%|##5       | 16/63 [03:33<10:06, 12.90s/it]
+       0/1        0G    0.1133   0.03379   0.08122        73       640:  27%|##6       | 17/63 [03:33<11:01, 14.39s/it]
+       0/1        0G    0.1126   0.03396   0.08102        65       640:  27%|##6       | 17/63 [03:49<11:01, 14.39s/it]
+       0/1        0G    0.1126   0.03396   0.08102        65       640:  29%|##8       | 18/63 [03:49<11:12, 14.95s/it]
+       0/1        0G    0.1123   0.03383   0.08078        52       640:  29%|##8       | 18/63 [04:06<11:12, 14.95s/it]
+       0/1        0G    0.1123   0.03383   0.08078        52       640:  30%|###       | 19/63 [04:06<11:17, 15.40s/it]
+       0/1        0G    0.1117   0.03349   0.08107        42       640:  30%|###       | 19/63 [04:21<11:17, 15.40s/it]
+       0/1        0G    0.1117   0.03349   0.08107        42       640:  32%|###1      | 20/63 [04:21<10:58, 15.32s/it]
+       0/1        0G    0.1107   0.03364   0.08111        60       640:  32%|###1      | 20/63 [04:38<10:58, 15.32s/it]
+       0/1        0G    0.1107   0.03364   0.08111        60       640:  33%|###3      | 21/63 [04:38<10:59, 15.70s/it]
+       0/1        0G    0.1102    0.0343   0.08091        98       640:  33%|###3      | 21/63 [04:56<10:59, 15.70s/it]
+       0/1        0G    0.1102    0.0343   0.08091        98       640:  35%|###4      | 22/63 [04:56<11:19, 16.56s/it]
+       0/1        0G    0.1095   0.03453   0.08073        68       640:  35%|###4      | 22/63 [05:13<11:19, 16.56s/it]
+       0/1        0G    0.1095   0.03453   0.08073        68       640:  37%|###6      | 23/63 [05:13<11:09, 16.75s/it]
+       0/1        0G    0.1095   0.03453   0.08073        68       640:  37%|###6      | 23/63 [05:21<09:19, 13.98s/it]
+Traceback (most recent call last):
+  File "C:\Users\Meet Nagadia\Yolo\Agriculture Leaves\yolov5\train.py", line 643, in <module>
+    main(opt)
+  File "C:\Users\Meet Nagadia\Yolo\Agriculture Leaves\yolov5\train.py", line 539, in main
+    train(opt.hyp, opt, device, callbacks)
+  File "C:\Users\Meet Nagadia\Yolo\Agriculture Leaves\yolov5\train.py", line 330, in train
+    pred = model(imgs)  # forward
+  File "C:\Project\envs\Yolo\lib\site-packages\torch\nn\modules\module.py", line 1110, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "C:\Users\Meet Nagadia\Yolo\Agriculture Leaves\yolov5\models\yolo.py", line 129, in forward
+    return self._forward_once(x, profile, visualize)  # single-scale inference, train
+  File "C:\Users\Meet Nagadia\Yolo\Agriculture Leaves\yolov5\models\yolo.py", line 152, in _forward_once
+    x = m(x)  # run
+  File "C:\Project\envs\Yolo\lib\site-packages\torch\nn\modules\module.py", line 1110, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "C:\Users\Meet Nagadia\Yolo\Agriculture Leaves\yolov5\models\yolo.py", line 55, in forward
+    x[i] = self.m[i](x[i])  # conv
+  File "C:\Project\envs\Yolo\lib\site-packages\torch\nn\modules\module.py", line 1110, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "C:\Project\envs\Yolo\lib\site-packages\torch\nn\modules\conv.py", line 447, in forward
+    return self._conv_forward(input, self.weight, self.bias)
+  File "C:\Project\envs\Yolo\lib\site-packages\torch\nn\modules\conv.py", line 443, in _conv_forward
+    return F.conv2d(input, weight, bias, self.stride,
+RuntimeError: [enforce fail at C:\actions-runner\_work\pytorch\pytorch\builder\windows\pytorch\c10\core\impl\alloc_cpu.cpp:81] data. DefaultCPUAllocator: not enough memory: you tried to allocate 52428800 bytes.
+wandb: Waiting for W&B process to finish... (failed 1). Press Ctrl-C to abort syncing.
+wandb: - 0.001 MB of 0.001 MB uploaded (0.000 MB deduped)
+wandb: \ 0.001 MB of 0.001 MB uploaded (0.000 MB deduped)
+wandb: | 0.001 MB of 0.019 MB uploaded (0.000 MB deduped)
+wandb: / 0.001 MB of 0.019 MB uploaded (0.000 MB deduped)
+wandb: - 0.001 MB of 0.019 MB uploaded (0.000 MB deduped)
+wandb: \ 0.001 MB of 0.019 MB uploaded (0.000 MB deduped)
+wandb: | 0.001 MB of 0.019 MB uploaded (0.000 MB deduped)
+wandb: / 0.001 MB of 0.019 MB uploaded (0.000 MB deduped)
+wandb: - 0.001 MB of 0.019 MB uploaded (0.000 MB deduped)
+wandb: \ 0.019 MB of 0.019 MB uploaded (0.000 MB deduped)
+wandb: | 0.019 MB of 0.019 MB uploaded (0.000 MB deduped)
+wandb: / 0.019 MB of 0.019 MB uploaded (0.000 MB deduped)
+wandb: - 0.019 MB of 0.019 MB uploaded (0.000 MB deduped)
+wandb: \ 0.019 MB of 0.019 MB uploaded (0.000 MB deduped)
+wandb: | 0.019 MB of 0.019 MB uploaded (0.000 MB deduped)
+wandb: / 0.019 MB of 0.019 MB uploaded (0.000 MB deduped)
+wandb: - 0.019 MB of 0.019 MB uploaded (0.000 MB deduped)
+wandb: \ 0.019 MB of 0.019 MB uploaded (0.000 MB deduped)
+wandb: | 0.019 MB of 0.019 MB uploaded (0.000 MB deduped)
+wandb:
+wandb: Synced efficient-night-1: https://wandb.ai/meettttt/train/runs/2hoe2vth
+wandb: Synced 6 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: Find logs at: .\wandb\run-20220518_073707-2hoe2vth\logs
+Exception ignored in: <function StorageWeakRef.__del__ at 0x000001D9CEE20C10>
+Traceback (most recent call last):
+  File "C:\Project\envs\Yolo\lib\site-packages\torch\multiprocessing\reductions.py", line 36, in __del__
+  File "C:\Project\envs\Yolo\lib\site-packages\torch\storage.py", line 520, in _free_weak_ref
+AttributeError: 'NoneType' object has no attribute '_free_weak_ref'
+Exception ignored in: <function StorageWeakRef.__del__ at 0x000001D9CEE20C10>
+Traceback (most recent call last):
+  File "C:\Project\envs\Yolo\lib\site-packages\torch\multiprocessing\reductions.py", line 36, in __del__
+  File "C:\Project\envs\Yolo\lib\site-packages\torch\storage.py", line 520, in _free_weak_ref
+AttributeError: 'NoneType' object has no attribute '_free_weak_ref'
+Exception ignored in: <function StorageWeakRef.__del__ at 0x000001D9CEE20C10>
+Traceback (most recent call last):
+  File "C:\Project\envs\Yolo\lib\site-packages\torch\multiprocessing\reductions.py", line 36, in __del__
+  File "C:\Project\envs\Yolo\lib\site-packages\torch\storage.py", line 520, in _free_weak_ref
+AttributeError: 'NoneType' object has no attribute '_free_weak_ref'
+Exception ignored in: <function StorageWeakRef.__del__ at 0x000001D9CEE20C10>
+Traceback (most recent call last):
+  File "C:\Project\envs\Yolo\lib\site-packages\torch\multiprocessing\reductions.py", line 36, in __del__
+  File "C:\Project\envs\Yolo\lib\site-packages\torch\storage.py", line 520, in _free_weak_ref
+AttributeError: 'NoneType' object has no attribute '_free_weak_ref'
+Exception ignored in: <function StorageWeakRef.__del__ at 0x000001D9CEE20C10>
+Traceback (most recent call last):
+  File "C:\Project\envs\Yolo\lib\site-packages\torch\multiprocessing\reductions.py", line 36, in __del__
+  File "C:\Project\envs\Yolo\lib\site-packages\torch\storage.py", line 520, in _free_weak_ref
+AttributeError: 'NoneType' object has no attribute '_free_weak_ref'
+Exception ignored in: <function StorageWeakRef.__del__ at 0x000001D9CEE20C10>
+Traceback (most recent call last):
+  File "C:\Project\envs\Yolo\lib\site-packages\torch\multiprocessing\reductions.py", line 36, in __del__
+  File "C:\Project\envs\Yolo\lib\site-packages\torch\storage.py", line 520, in _free_weak_ref
+AttributeError: 'NoneType' object has no attribute '_free_weak_ref'
+Exception ignored in: <function StorageWeakRef.__del__ at 0x000001D9CEE20C10>
+Traceback (most recent call last):
+  File "C:\Project\envs\Yolo\lib\site-packages\torch\multiprocessing\reductions.py", line 36, in __del__
+  File "C:\Project\envs\Yolo\lib\site-packages\torch\storage.py", line 520, in _free_weak_ref
+AttributeError: 'NoneType' object has no attribute '_free_weak_ref'
+Exception ignored in: <function StorageWeakRef.__del__ at 0x000001D9CEE20C10>
+Traceback (most recent call last):
+  File "C:\Project\envs\Yolo\lib\site-packages\torch\multiprocessing\reductions.py", line 36, in __del__
+  File "C:\Project\envs\Yolo\lib\site-packages\torch\storage.py", line 520, in _free_weak_ref
+AttributeError: 'NoneType' object has no attribute '_free_weak_ref'
+Exception ignored in: <function StorageWeakRef.__del__ at 0x000001D9CEE20C10>
+Traceback (most recent call last):
+  File "C:\Project\envs\Yolo\lib\site-packages\torch\multiprocessing\reductions.py", line 36, in __del__
+  File "C:\Project\envs\Yolo\lib\site-packages\torch\storage.py", line 520, in _free_weak_ref
+AttributeError: 'NoneType' object has no attribute '_free_weak_ref'
+Exception ignored in: <function StorageWeakRef.__del__ at 0x000001D9CEE20C10>
+Traceback (most recent call last):
+  File "C:\Project\envs\Yolo\lib\site-packages\torch\multiprocessing\reductions.py", line 36, in __del__
+  File "C:\Project\envs\Yolo\lib\site-packages\torch\storage.py", line 520, in _free_weak_ref
+AttributeError: 'NoneType' object has no attribute '_free_weak_ref'
+Exception ignored in: <function StorageWeakRef.__del__ at 0x000001D9CEE20C10>
+Traceback (most recent call last):
+  File "C:\Project\envs\Yolo\lib\site-packages\torch\multiprocessing\reductions.py", line 36, in __del__
+  File "C:\Project\envs\Yolo\lib\site-packages\torch\storage.py", line 520, in _free_weak_ref
+AttributeError: 'NoneType' object has no attribute '_free_weak_ref'
+Exception ignored in: <function StorageWeakRef.__del__ at 0x000001D9CEE20C10>
+Traceback (most recent call last):
+  File "C:\Project\envs\Yolo\lib\site-packages\torch\multiprocessing\reductions.py", line 36, in __del__
+  File "C:\Project\envs\Yolo\lib\site-packages\torch\storage.py", line 520, in _free_weak_ref
+AttributeError: 'NoneType' object has no attribute '_free_weak_ref'
+Exception ignored in: <function StorageWeakRef.__del__ at 0x000001D9CEE20C10>
+Traceback (most recent call last):
+  File "C:\Project\envs\Yolo\lib\site-packages\torch\multiprocessing\reductions.py", line 36, in __del__
+  File "C:\Project\envs\Yolo\lib\site-packages\torch\storage.py", line 520, in _free_weak_ref
+AttributeError: 'NoneType' object has no attribute '_free_weak_ref'
+Exception ignored in: <function StorageWeakRef.__del__ at 0x000001D9CEE20C10>
+Traceback (most recent call last):
+  File "C:\Project\envs\Yolo\lib\site-packages\torch\multiprocessing\reductions.py", line 36, in __del__
+  File "C:\Project\envs\Yolo\lib\site-packages\torch\storage.py", line 520, in _free_weak_ref
+AttributeError: 'NoneType' object has no attribute '_free_weak_ref'
+Exception ignored in: <function StorageWeakRef.__del__ at 0x000001D9CEE20C10>
+Traceback (most recent call last):
+  File "C:\Project\envs\Yolo\lib\site-packages\torch\multiprocessing\reductions.py", line 36, in __del__
+  File "C:\Project\envs\Yolo\lib\site-packages\torch\storage.py", line 520, in _free_weak_ref
+AttributeError: 'NoneType' object has no attribute '_free_weak_ref'
+Exception ignored in: <function StorageWeakRef.__del__ at 0x000001D9CEE20C10>
+Traceback (most recent call last):
+  File "C:\Project\envs\Yolo\lib\site-packages\torch\multiprocessing\reductions.py", line 36, in __del__
+  File "C:\Project\envs\Yolo\lib\site-packages\torch\storage.py", line 520, in _free_weak_ref
+AttributeError: 'NoneType' object has no attribute '_free_weak_ref'
+Exception ignored in: <function StorageWeakRef.__del__ at 0x000001D9CEE20C10>
+Traceback (most recent call last):
+  File "C:\Project\envs\Yolo\lib\site-packages\torch\multiprocessing\reductions.py", line 36, in __del__
+  File "C:\Project\envs\Yolo\lib\site-packages\torch\storage.py", line 520, in _free_weak_ref
+AttributeError: 'NoneType' object has no attribute '_free_weak_ref'
+Exception ignored in: <function StorageWeakRef.__del__ at 0x000001D9CEE20C10>
+Traceback (most recent call last):
+  File "C:\Project\envs\Yolo\lib\site-packages\torch\multiprocessing\reductions.py", line 36, in __del__
+  File "C:\Project\envs\Yolo\lib\site-packages\torch\storage.py", line 520, in _free_weak_ref
+AttributeError: 'NoneType' object has no attribute '_free_weak_ref'
+Exception ignored in: <function StorageWeakRef.__del__ at 0x000001D9CEE20C10>
+Traceback (most recent call last):
+  File "C:\Project\envs\Yolo\lib\site-packages\torch\multiprocessing\reductions.py", line 36, in __del__
+  File "C:\Project\envs\Yolo\lib\site-packages\torch\storage.py", line 520, in _free_weak_ref
+AttributeError: 'NoneType' object has no attribute '_free_weak_ref'
+Exception ignored in: <function StorageWeakRef.__del__ at 0x000001D9CEE20C10>
+Traceback (most recent call last):
+  File "C:\Project\envs\Yolo\lib\site-packages\torch\multiprocessing\reductions.py", line 36, in __del__
+  File "C:\Project\envs\Yolo\lib\site-packages\torch\storage.py", line 520, in _free_weak_ref
+AttributeError: 'NoneType' object has no attribute '_free_weak_ref'
+Exception ignored in: <function StorageWeakRef.__del__ at 0x000001D9CEE20C10>
+Traceback (most recent call last):
+  File "C:\Project\envs\Yolo\lib\site-packages\torch\multiprocessing\reductions.py", line 36, in __del__
+  File "C:\Project\envs\Yolo\lib\site-packages\torch\storage.py", line 520, in _free_weak_ref
+AttributeError: 'NoneType' object has no attribute '_free_weak_ref'
+Exception ignored in: <function StorageWeakRef.__del__ at 0x000001D9CEE20C10>
+Traceback (most recent call last):
+  File "C:\Project\envs\Yolo\lib\site-packages\torch\multiprocessing\reductions.py", line 36, in __del__
+  File "C:\Project\envs\Yolo\lib\site-packages\torch\storage.py", line 520, in _free_weak_ref
+AttributeError: 'NoneType' object has no attribute '_free_weak_ref'
+Exception ignored in: <function StorageWeakRef.__del__ at 0x000001D9CEE20C10>
+Traceback (most recent call last):
+  File "C:\Project\envs\Yolo\lib\site-packages\torch\multiprocessing\reductions.py", line 36, in __del__
+  File "C:\Project\envs\Yolo\lib\site-packages\torch\storage.py", line 520, in _free_weak_ref
+AttributeError: 'NoneType' object has no attribute '_free_weak_ref'
+Exception ignored in: <function StorageWeakRef.__del__ at 0x000001D9CEE20C10>
+Traceback (most recent call last):
+  File "C:\Project\envs\Yolo\lib\site-packages\torch\multiprocessing\reductions.py", line 36, in __del__
+  File "C:\Project\envs\Yolo\lib\site-packages\torch\storage.py", line 520, in _free_weak_ref
+AttributeError: 'NoneType' object has no attribute '_free_weak_ref'
+Exception ignored in: <function StorageWeakRef.__del__ at 0x000001D9CEE20C10>
+Traceback (most recent call last):
+  File "C:\Project\envs\Yolo\lib\site-packages\torch\multiprocessing\reductions.py", line 36, in __del__
+  File "C:\Project\envs\Yolo\lib\site-packages\torch\storage.py", line 520, in _free_weak_ref
+AttributeError: 'NoneType' object has no attribute '_free_weak_ref'
+Exception ignored in: <function StorageWeakRef.__del__ at 0x000001D9CEE20C10>
+Traceback (most recent call last):
+  File "C:\Project\envs\Yolo\lib\site-packages\torch\multiprocessing\reductions.py", line 36, in __del__
+  File "C:\Project\envs\Yolo\lib\site-packages\torch\storage.py", line 520, in _free_weak_ref
+AttributeError: 'NoneType' object has no attribute '_free_weak_ref'
+Exception ignored in: <function StorageWeakRef.__del__ at 0x000001D9CEE20C10>
+Traceback (most recent call last):
+  File "C:\Project\envs\Yolo\lib\site-packages\torch\multiprocessing\reductions.py", line 36, in __del__
+  File "C:\Project\envs\Yolo\lib\site-packages\torch\storage.py", line 520, in _free_weak_ref
+AttributeError: 'NoneType' object has no attribute '_free_weak_ref'
+Exception ignored in: <function StorageWeakRef.__del__ at 0x000001D9CEE20C10>
+Traceback (most recent call last):
+  File "C:\Project\envs\Yolo\lib\site-packages\torch\multiprocessing\reductions.py", line 36, in __del__
+  File "C:\Project\envs\Yolo\lib\site-packages\torch\storage.py", line 520, in _free_weak_ref
+AttributeError: 'NoneType' object has no attribute '_free_weak_ref'
+Exception ignored in: <function StorageWeakRef.__del__ at 0x000001D9CEE20C10>
+Traceback (most recent call last):
+  File "C:\Project\envs\Yolo\lib\site-packages\torch\multiprocessing\reductions.py", line 36, in __del__
+  File "C:\Project\envs\Yolo\lib\site-packages\torch\storage.py", line 520, in _free_weak_ref
+AttributeError: 'NoneType' object has no attribute '_free_weak_ref'
+Exception ignored in: <function StorageWeakRef.__del__ at 0x000001D9CEE20C10>
+Traceback (most recent call last):
+  File "C:\Project\envs\Yolo\lib\site-packages\torch\multiprocessing\reductions.py", line 36, in __del__
+  File "C:\Project\envs\Yolo\lib\site-packages\torch\storage.py", line 520, in _free_weak_ref
+AttributeError: 'NoneType' object has no attribute '_free_weak_ref'
+Exception ignored in: <function StorageWeakRef.__del__ at 0x000001D9CEE20C10>
+Traceback (most recent call last):
+  File "C:\Project\envs\Yolo\lib\site-packages\torch\multiprocessing\reductions.py", line 36, in __del__
+  File "C:\Project\envs\Yolo\lib\site-packages\torch\storage.py", line 520, in _free_weak_ref
+AttributeError: 'NoneType' object has no attribute '_free_weak_ref'
+Exception ignored in: <function StorageWeakRef.__del__ at 0x000001D9CEE20C10>
+Traceback (most recent call last):
+  File "C:\Project\envs\Yolo\lib\site-packages\torch\multiprocessing\reductions.py", line 36, in __del__
+  File "C:\Project\envs\Yolo\lib\site-packages\torch\storage.py", line 520, in _free_weak_ref
+AttributeError: 'NoneType' object has no attribute '_free_weak_ref'
+Exception ignored in: <function StorageWeakRef.__del__ at 0x000001D9CEE20C10>
+Traceback (most recent call last):
+  File "C:\Project\envs\Yolo\lib\site-packages\torch\multiprocessing\reductions.py", line 36, in __del__
+  File "C:\Project\envs\Yolo\lib\site-packages\torch\storage.py", line 520, in _free_weak_ref
+AttributeError: 'NoneType' object has no attribute '_free_weak_ref'
+Exception ignored in: <function StorageWeakRef.__del__ at 0x000001D9CEE20C10>
+Traceback (most recent call last):
+  File "C:\Project\envs\Yolo\lib\site-packages\torch\multiprocessing\reductions.py", line 36, in __del__
+  File "C:\Project\envs\Yolo\lib\site-packages\torch\storage.py", line 520, in _free_weak_ref
+AttributeError: 'NoneType' object has no attribute '_free_weak_ref'
+Exception ignored in: <function StorageWeakRef.__del__ at 0x000001D9CEE20C10>
+Traceback (most recent call last):
+  File "C:\Project\envs\Yolo\lib\site-packages\torch\multiprocessing\reductions.py", line 36, in __del__
+  File "C:\Project\envs\Yolo\lib\site-packages\torch\storage.py", line 520, in _free_weak_ref
+AttributeError: 'NoneType' object has no attribute '_free_weak_ref'
+Exception ignored in: <function StorageWeakRef.__del__ at 0x000001D9CEE20C10>
+Traceback (most recent call last):
+  File "C:\Project\envs\Yolo\lib\site-packages\torch\multiprocessing\reductions.py", line 36, in __del__
+  File "C:\Project\envs\Yolo\lib\site-packages\torch\storage.py", line 520, in _free_weak_ref
+AttributeError: 'NoneType' object has no attribute '_free_weak_ref'
+Exception ignored in: <function StorageWeakRef.__del__ at 0x000001D9CEE20C10>
+Traceback (most recent call last):
+  File "C:\Project\envs\Yolo\lib\site-packages\torch\multiprocessing\reductions.py", line 36, in __del__
+  File "C:\Project\envs\Yolo\lib\site-packages\torch\storage.py", line 520, in _free_weak_ref
+AttributeError: 'NoneType' object has no attribute '_free_weak_ref'
+Exception ignored in: <function StorageWeakRef.__del__ at 0x000001D9CEE20C10>
+Traceback (most recent call last):
+  File "C:\Project\envs\Yolo\lib\site-packages\torch\multiprocessing\reductions.py", line 36, in __del__
+  File "C:\Project\envs\Yolo\lib\site-packages\torch\storage.py", line 520, in _free_weak_ref
+AttributeError: 'NoneType' object has no attribute '_free_weak_ref'
+Exception ignored in: <function StorageWeakRef.__del__ at 0x000001D9CEE20C10>
+Traceback (most recent call last):
+  File "C:\Project\envs\Yolo\lib\site-packages\torch\multiprocessing\reductions.py", line 36, in __del__
+  File "C:\Project\envs\Yolo\lib\site-packages\torch\storage.py", line 520, in _free_weak_ref
+AttributeError: 'NoneType' object has no attribute '_free_weak_ref'
+Exception ignored in: <function StorageWeakRef.__del__ at 0x000001D9CEE20C10>
+Traceback (most recent call last):
+  File "C:\Project\envs\Yolo\lib\site-packages\torch\multiprocessing\reductions.py", line 36, in __del__
+  File "C:\Project\envs\Yolo\lib\site-packages\torch\storage.py", line 520, in _free_weak_ref
+AttributeError: 'NoneType' object has no attribute '_free_weak_ref'
+Exception ignored in: <function StorageWeakRef.__del__ at 0x000001D9CEE20C10>
+Traceback (most recent call last):
+  File "C:\Project\envs\Yolo\lib\site-packages\torch\multiprocessing\reductions.py", line 36, in __del__
+  File "C:\Project\envs\Yolo\lib\site-packages\torch\storage.py", line 520, in _free_weak_ref
+AttributeError: 'NoneType' object has no attribute '_free_weak_ref'
+Exception ignored in: <function StorageWeakRef.__del__ at 0x000001D9CEE20C10>
+Traceback (most recent call last):
+  File "C:\Project\envs\Yolo\lib\site-packages\torch\multiprocessing\reductions.py", line 36, in __del__
+  File "C:\Project\envs\Yolo\lib\site-packages\torch\storage.py", line 520, in _free_weak_ref
+AttributeError: 'NoneType' object has no attribute '_free_weak_ref'
+Exception ignored in: <function StorageWeakRef.__del__ at 0x000001D9CEE20C10>
+Traceback (most recent call last):
+  File "C:\Project\envs\Yolo\lib\site-packages\torch\multiprocessing\reductions.py", line 36, in __del__
+  File "C:\Project\envs\Yolo\lib\site-packages\torch\storage.py", line 520, in _free_weak_ref
+AttributeError: 'NoneType' object has no attribute '_free_weak_ref'
+Exception ignored in: <function StorageWeakRef.__del__ at 0x000001D9CEE20C10>
+Traceback (most recent call last):
+  File "C:\Project\envs\Yolo\lib\site-packages\torch\multiprocessing\reductions.py", line 36, in __del__
+  File "C:\Project\envs\Yolo\lib\site-packages\torch\storage.py", line 520, in _free_weak_ref
+AttributeError: 'NoneType' object has no attribute '_free_weak_ref'
+Exception ignored in: <function StorageWeakRef.__del__ at 0x000001D9CEE20C10>
+Traceback (most recent call last):
+  File "C:\Project\envs\Yolo\lib\site-packages\torch\multiprocessing\reductions.py", line 36, in __del__
+  File "C:\Project\envs\Yolo\lib\site-packages\torch\storage.py", line 520, in _free_weak_ref
+AttributeError: 'NoneType' object has no attribute '_free_weak_ref'
+Exception ignored in: <function StorageWeakRef.__del__ at 0x000001D9CEE20C10>
+Traceback (most recent call last):
+  File "C:\Project\envs\Yolo\lib\site-packages\torch\multiprocessing\reductions.py", line 36, in __del__
+  File "C:\Project\envs\Yolo\lib\site-packages\torch\storage.py", line 520, in _free_weak_ref
+AttributeError: 'NoneType' object has no attribute '_free_weak_ref'
+Exception ignored in: <function StorageWeakRef.__del__ at 0x000001D9CEE20C10>
+Traceback (most recent call last):
+  File "C:\Project\envs\Yolo\lib\site-packages\torch\multiprocessing\reductions.py", line 36, in __del__
+  File "C:\Project\envs\Yolo\lib\site-packages\torch\storage.py", line 520, in _free_weak_ref
+AttributeError: 'NoneType' object has no attribute '_free_weak_ref'
+Exception ignored in: <function StorageWeakRef.__del__ at 0x000001D9CEE20C10>
+Traceback (most recent call last):
+  File "C:\Project\envs\Yolo\lib\site-packages\torch\multiprocessing\reductions.py", line 36, in __del__

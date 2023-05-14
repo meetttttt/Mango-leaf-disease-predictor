@@ -1,0 +1,12 @@
+2022-05-18 07:05:50,813 INFO    MainThread:15972 [internal.py:wandb_internal():92] W&B internal server running at pid: 15972, started at: 2022-05-18 07:05:50.813469
+2022-05-18 07:05:50,814 INFO    WriterThread:15972 [datastore.py:open_for_write():77] open: C:\Users\Meet Nagadia\Yolo\Agriculture Leaves\wandb\offline-run-20220518_070547-2vcpogbq\run-2vcpogbq.wandb
+2022-05-18 07:05:50,814 DEBUG   HandlerThread:15972 [handler.py:handle_request():141] handle_request: run_start
+2022-05-18 07:05:51,405 DEBUG   HandlerThread:15972 [meta.py:__init__():37] meta init
+2022-05-18 07:05:51,405 DEBUG   HandlerThread:15972 [meta.py:__init__():51] meta init done
+2022-05-18 07:05:51,415 DEBUG   HandlerThread:15972 [meta.py:probe():211] probe
+2022-05-18 07:05:51,433 DEBUG   HandlerThread:15972 [git.py:repo():33] git repository is invalid
+2022-05-18 07:05:51,433 DEBUG   HandlerThread:15972 [meta.py:_save_pip():55] save pip
+2022-05-18 07:05:51,433 DEBUG   HandlerThread:15972 [meta.py:_save_pip():69] save pip done
+2022-05-18 07:05:51,434 DEBUG   HandlerThread:15972 [meta.py:_save_conda():76] save conda
+2022-05-18 07:05:54,858 DEBUG   HandlerThread:15972 [meta.py:_save_conda():86] save conda done
+2022-05-18 07:05:54,858 DEBUG   HandlerThread:15972 [meta.py:probe():249] probe done

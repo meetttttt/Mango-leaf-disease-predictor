@@ -1,0 +1,182 @@
+2022-05-21 13:39:25,268 INFO    MainThread:16364 [internal.py:wandb_internal():90] W&B internal server running at pid: 16364, started at: 2022-05-21 13:39:25.268825
+2022-05-21 13:39:25,270 INFO    WriterThread:16364 [datastore.py:open_for_write():75] open: C:\Users\Meet Nagadia\Yolo\Agriculture Leaves\wandb\run-20220521_133924-ruz8ubi8\run-ruz8ubi8.wandb
+2022-05-21 13:39:25,273 DEBUG   SenderThread:16364 [sender.py:send():232] send: header
+2022-05-21 13:39:25,273 DEBUG   SenderThread:16364 [sender.py:send():232] send: run
+2022-05-21 13:39:25,283 INFO    SenderThread:16364 [sender.py:_maybe_setup_resume():489] checking resume status for None/train/ruz8ubi8
+2022-05-21 13:39:26,211 DEBUG   HandlerThread:16364 [handler.py:handle_request():141] handle_request: check_version
+2022-05-21 13:39:26,215 INFO    SenderThread:16364 [dir_watcher.py:__init__():197] watching files in: C:\Users\Meet Nagadia\Yolo\Agriculture Leaves\wandb\run-20220521_133924-ruz8ubi8\files
+2022-05-21 13:39:26,215 INFO    SenderThread:16364 [sender.py:_start_run_threads():811] run started: ruz8ubi8 with start time 1653120564
+2022-05-21 13:39:26,215 DEBUG   SenderThread:16364 [sender.py:send():232] send: summary
+2022-05-21 13:39:26,216 INFO    SenderThread:16364 [sender.py:_save_file():948] saving file wandb-summary.json with policy end
+2022-05-21 13:39:26,216 DEBUG   SenderThread:16364 [sender.py:send_request():246] send_request: check_version
+2022-05-21 13:39:26,745 DEBUG   HandlerThread:16364 [handler.py:handle_request():141] handle_request: run_start
+2022-05-21 13:39:26,762 DEBUG   HandlerThread:16364 [meta.py:__init__():35] meta init
+2022-05-21 13:39:26,763 DEBUG   HandlerThread:16364 [meta.py:__init__():49] meta init done
+2022-05-21 13:39:26,763 DEBUG   HandlerThread:16364 [meta.py:probe():209] probe
+2022-05-21 13:39:26,811 DEBUG   HandlerThread:16364 [git.py:repo():29] git repository is invalid
+2022-05-21 13:39:26,811 DEBUG   HandlerThread:16364 [meta.py:_save_pip():53] save pip
+2022-05-21 13:39:26,812 DEBUG   HandlerThread:16364 [meta.py:_save_pip():67] save pip done
+2022-05-21 13:39:26,812 DEBUG   HandlerThread:16364 [meta.py:_save_conda():74] save conda
+2022-05-21 13:39:27,221 INFO    Thread-11 :16364 [dir_watcher.py:_on_file_created():244] file/dir created: C:\Users\Meet Nagadia\Yolo\Agriculture Leaves\wandb\run-20220521_133924-ruz8ubi8\files\conda-environment.yaml
+2022-05-21 13:39:27,221 INFO    Thread-11 :16364 [dir_watcher.py:_on_file_created():244] file/dir created: C:\Users\Meet Nagadia\Yolo\Agriculture Leaves\wandb\run-20220521_133924-ruz8ubi8\files\requirements.txt
+2022-05-21 13:39:27,222 INFO    Thread-11 :16364 [dir_watcher.py:_on_file_created():244] file/dir created: C:\Users\Meet Nagadia\Yolo\Agriculture Leaves\wandb\run-20220521_133924-ruz8ubi8\files\wandb-summary.json
+2022-05-21 13:39:31,242 INFO    Thread-11 :16364 [dir_watcher.py:_on_file_modified():257] file/dir modified: C:\Users\Meet Nagadia\Yolo\Agriculture Leaves\wandb\run-20220521_133924-ruz8ubi8\files\conda-environment.yaml
+2022-05-21 13:39:31,559 DEBUG   HandlerThread:16364 [meta.py:_save_conda():84] save conda done
+2022-05-21 13:39:31,559 DEBUG   HandlerThread:16364 [meta.py:probe():247] probe done
+2022-05-21 13:39:31,640 DEBUG   SenderThread:16364 [sender.py:send():232] send: files
+2022-05-21 13:39:31,640 INFO    SenderThread:16364 [sender.py:_save_file():948] saving file wandb-metadata.json with policy now
+2022-05-21 13:39:31,647 DEBUG   HandlerThread:16364 [handler.py:handle_request():141] handle_request: stop_status
+2022-05-21 13:39:31,647 DEBUG   SenderThread:16364 [sender.py:send_request():246] send_request: stop_status
+2022-05-21 13:39:32,114 DEBUG   SenderThread:16364 [sender.py:send():232] send: telemetry
+2022-05-21 13:39:32,114 DEBUG   SenderThread:16364 [sender.py:send():232] send: config
+2022-05-21 13:39:32,252 INFO    Thread-11 :16364 [dir_watcher.py:_on_file_created():244] file/dir created: C:\Users\Meet Nagadia\Yolo\Agriculture Leaves\wandb\run-20220521_133924-ruz8ubi8\files\wandb-metadata.json
+2022-05-21 13:39:32,253 INFO    Thread-11 :16364 [dir_watcher.py:_on_file_created():244] file/dir created: C:\Users\Meet Nagadia\Yolo\Agriculture Leaves\wandb\run-20220521_133924-ruz8ubi8\files\output.log
+2022-05-21 13:39:32,847 INFO    Thread-15 :16364 [upload_job.py:push():132] Uploaded file C:\Users\MEETNA~1\AppData\Local\Temp\tmpwkncph9nwandb\2m76sz7x-wandb-metadata.json
+2022-05-21 13:39:34,274 INFO    Thread-11 :16364 [dir_watcher.py:_on_file_modified():257] file/dir modified: C:\Users\Meet Nagadia\Yolo\Agriculture Leaves\wandb\run-20220521_133924-ruz8ubi8\files\output.log
+2022-05-21 13:39:47,125 DEBUG   HandlerThread:16364 [handler.py:handle_request():141] handle_request: stop_status
+2022-05-21 13:39:47,126 DEBUG   SenderThread:16364 [sender.py:send_request():246] send_request: stop_status
+2022-05-21 13:39:56,494 INFO    Thread-11 :16364 [dir_watcher.py:_on_file_modified():257] file/dir modified: C:\Users\Meet Nagadia\Yolo\Agriculture Leaves\wandb\run-20220521_133924-ruz8ubi8\files\config.yaml
+2022-05-21 13:39:58,394 DEBUG   SenderThread:16364 [sender.py:send():232] send: stats
+2022-05-21 13:40:02,560 DEBUG   HandlerThread:16364 [handler.py:handle_request():141] handle_request: stop_status
+2022-05-21 13:40:02,561 DEBUG   SenderThread:16364 [sender.py:send_request():246] send_request: stop_status
+2022-05-21 13:40:12,656 INFO    Thread-11 :16364 [dir_watcher.py:_on_file_modified():257] file/dir modified: C:\Users\Meet Nagadia\Yolo\Agriculture Leaves\wandb\run-20220521_133924-ruz8ubi8\files\output.log
+2022-05-21 13:40:18,003 DEBUG   HandlerThread:16364 [handler.py:handle_request():141] handle_request: stop_status
+2022-05-21 13:40:18,004 DEBUG   SenderThread:16364 [sender.py:send_request():246] send_request: stop_status
+2022-05-21 13:40:32,213 DEBUG   SenderThread:16364 [sender.py:send():232] send: stats
+2022-05-21 13:40:33,537 DEBUG   HandlerThread:16364 [handler.py:handle_request():141] handle_request: stop_status
+2022-05-21 13:40:33,537 DEBUG   SenderThread:16364 [sender.py:send_request():246] send_request: stop_status
+2022-05-21 13:40:48,984 DEBUG   HandlerThread:16364 [handler.py:handle_request():141] handle_request: stop_status
+2022-05-21 13:40:48,984 DEBUG   SenderThread:16364 [sender.py:send_request():246] send_request: stop_status
+2022-05-21 13:41:04,453 DEBUG   HandlerThread:16364 [handler.py:handle_request():141] handle_request: stop_status
+2022-05-21 13:41:04,454 DEBUG   SenderThread:16364 [sender.py:send_request():246] send_request: stop_status
+2022-05-21 13:41:06,305 DEBUG   SenderThread:16364 [sender.py:send():232] send: stats
+2022-05-21 13:41:09,017 INFO    Thread-11 :16364 [dir_watcher.py:_on_file_modified():257] file/dir modified: C:\Users\Meet Nagadia\Yolo\Agriculture Leaves\wandb\run-20220521_133924-ruz8ubi8\files\output.log
+2022-05-21 13:41:13,050 INFO    Thread-11 :16364 [dir_watcher.py:_on_file_modified():257] file/dir modified: C:\Users\Meet Nagadia\Yolo\Agriculture Leaves\wandb\run-20220521_133924-ruz8ubi8\files\output.log
+2022-05-21 13:41:15,152 DEBUG   SenderThread:16364 [sender.py:send():232] send: telemetry
+2022-05-21 13:41:15,615 DEBUG   SenderThread:16364 [sender.py:send():232] send: exit
+2022-05-21 13:41:15,615 INFO    SenderThread:16364 [sender.py:send_exit():368] handling exit code: 1
+2022-05-21 13:41:15,616 DEBUG   HandlerThread:16364 [handler.py:handle_request():141] handle_request: poll_exit
+2022-05-21 13:41:15,616 INFO    SenderThread:16364 [sender.py:send_exit():370] handling runtime: 108
+2022-05-21 13:41:15,617 INFO    SenderThread:16364 [sender.py:_save_file():948] saving file wandb-summary.json with policy end
+2022-05-21 13:41:15,618 INFO    SenderThread:16364 [sender.py:send_exit():376] send defer
+2022-05-21 13:41:15,619 DEBUG   SenderThread:16364 [sender.py:send_request():246] send_request: poll_exit
+2022-05-21 13:41:15,621 DEBUG   HandlerThread:16364 [handler.py:handle_request():141] handle_request: defer
+2022-05-21 13:41:15,621 INFO    HandlerThread:16364 [handler.py:handle_request_defer():164] handle defer: 0
+2022-05-21 13:41:15,621 DEBUG   SenderThread:16364 [sender.py:send_request():246] send_request: defer
+2022-05-21 13:41:15,622 INFO    SenderThread:16364 [sender.py:send_request_defer():385] handle sender defer: 0
+2022-05-21 13:41:15,622 INFO    SenderThread:16364 [sender.py:transition_state():389] send defer: 1
+2022-05-21 13:41:15,622 DEBUG   HandlerThread:16364 [handler.py:handle_request():141] handle_request: defer
+2022-05-21 13:41:15,622 INFO    HandlerThread:16364 [handler.py:handle_request_defer():164] handle defer: 1
+2022-05-21 13:41:15,685 DEBUG   SenderThread:16364 [sender.py:send_request():246] send_request: defer
+2022-05-21 13:41:15,685 INFO    SenderThread:16364 [sender.py:send_request_defer():385] handle sender defer: 1
+2022-05-21 13:41:15,685 INFO    SenderThread:16364 [sender.py:transition_state():389] send defer: 2
+2022-05-21 13:41:15,685 DEBUG   SenderThread:16364 [sender.py:send():232] send: stats
+2022-05-21 13:41:15,686 DEBUG   HandlerThread:16364 [handler.py:handle_request():141] handle_request: defer
+2022-05-21 13:41:15,686 INFO    HandlerThread:16364 [handler.py:handle_request_defer():164] handle defer: 2
+2022-05-21 13:41:15,686 DEBUG   SenderThread:16364 [sender.py:send_request():246] send_request: defer
+2022-05-21 13:41:15,686 INFO    SenderThread:16364 [sender.py:send_request_defer():385] handle sender defer: 2
+2022-05-21 13:41:15,686 INFO    SenderThread:16364 [sender.py:transition_state():389] send defer: 3
+2022-05-21 13:41:15,687 DEBUG   HandlerThread:16364 [handler.py:handle_request():141] handle_request: defer
+2022-05-21 13:41:15,687 INFO    HandlerThread:16364 [handler.py:handle_request_defer():164] handle defer: 3
+2022-05-21 13:41:15,687 DEBUG   SenderThread:16364 [sender.py:send_request():246] send_request: defer
+2022-05-21 13:41:15,687 INFO    SenderThread:16364 [sender.py:send_request_defer():385] handle sender defer: 3
+2022-05-21 13:41:15,687 INFO    SenderThread:16364 [sender.py:transition_state():389] send defer: 4
+2022-05-21 13:41:15,687 DEBUG   HandlerThread:16364 [handler.py:handle_request():141] handle_request: defer
+2022-05-21 13:41:15,687 INFO    HandlerThread:16364 [handler.py:handle_request_defer():164] handle defer: 4
+2022-05-21 13:41:15,688 DEBUG   SenderThread:16364 [sender.py:send():232] send: summary
+2022-05-21 13:41:15,688 INFO    SenderThread:16364 [sender.py:_save_file():948] saving file wandb-summary.json with policy end
+2022-05-21 13:41:15,688 DEBUG   SenderThread:16364 [sender.py:send_request():246] send_request: defer
+2022-05-21 13:41:15,688 INFO    SenderThread:16364 [sender.py:send_request_defer():385] handle sender defer: 4
+2022-05-21 13:41:15,688 INFO    SenderThread:16364 [sender.py:transition_state():389] send defer: 5
+2022-05-21 13:41:15,689 DEBUG   HandlerThread:16364 [handler.py:handle_request():141] handle_request: defer
+2022-05-21 13:41:15,689 INFO    HandlerThread:16364 [handler.py:handle_request_defer():164] handle defer: 5
+2022-05-21 13:41:15,689 DEBUG   SenderThread:16364 [sender.py:send_request():246] send_request: defer
+2022-05-21 13:41:15,689 INFO    SenderThread:16364 [sender.py:send_request_defer():385] handle sender defer: 5
+2022-05-21 13:41:15,734 DEBUG   HandlerThread:16364 [handler.py:handle_request():141] handle_request: poll_exit
+2022-05-21 13:41:16,080 INFO    Thread-11 :16364 [dir_watcher.py:_on_file_modified():257] file/dir modified: C:\Users\Meet Nagadia\Yolo\Agriculture Leaves\wandb\run-20220521_133924-ruz8ubi8\files\output.log
+2022-05-21 13:41:16,081 INFO    Thread-11 :16364 [dir_watcher.py:_on_file_modified():257] file/dir modified: C:\Users\Meet Nagadia\Yolo\Agriculture Leaves\wandb\run-20220521_133924-ruz8ubi8\files\wandb-summary.json
+2022-05-21 13:41:16,245 INFO    SenderThread:16364 [sender.py:transition_state():389] send defer: 6
+2022-05-21 13:41:16,245 DEBUG   SenderThread:16364 [sender.py:send_request():246] send_request: poll_exit
+2022-05-21 13:41:16,245 DEBUG   HandlerThread:16364 [handler.py:handle_request():141] handle_request: defer
+2022-05-21 13:41:16,245 INFO    HandlerThread:16364 [handler.py:handle_request_defer():164] handle defer: 6
+2022-05-21 13:41:16,246 DEBUG   SenderThread:16364 [sender.py:send_request():246] send_request: defer
+2022-05-21 13:41:16,246 INFO    SenderThread:16364 [sender.py:send_request_defer():385] handle sender defer: 6
+2022-05-21 13:41:16,246 INFO    SenderThread:16364 [dir_watcher.py:finish():312] shutting down directory watcher
+2022-05-21 13:41:16,349 DEBUG   HandlerThread:16364 [handler.py:handle_request():141] handle_request: poll_exit
+2022-05-21 13:41:17,094 INFO    SenderThread:16364 [dir_watcher.py:_on_file_modified():257] file/dir modified: C:\Users\Meet Nagadia\Yolo\Agriculture Leaves\wandb\run-20220521_133924-ruz8ubi8\files\config.yaml
+2022-05-21 13:41:17,095 INFO    SenderThread:16364 [dir_watcher.py:finish():342] scan: C:\Users\Meet Nagadia\Yolo\Agriculture Leaves\wandb\run-20220521_133924-ruz8ubi8\files
+2022-05-21 13:41:17,095 INFO    SenderThread:16364 [dir_watcher.py:finish():356] scan save: C:\Users\Meet Nagadia\Yolo\Agriculture Leaves\wandb\run-20220521_133924-ruz8ubi8\files\conda-environment.yaml conda-environment.yaml
+2022-05-21 13:41:17,096 INFO    SenderThread:16364 [dir_watcher.py:finish():356] scan save: C:\Users\Meet Nagadia\Yolo\Agriculture Leaves\wandb\run-20220521_133924-ruz8ubi8\files\config.yaml config.yaml
+2022-05-21 13:41:17,096 INFO    SenderThread:16364 [dir_watcher.py:finish():356] scan save: C:\Users\Meet Nagadia\Yolo\Agriculture Leaves\wandb\run-20220521_133924-ruz8ubi8\files\output.log output.log
+2022-05-21 13:41:17,096 INFO    SenderThread:16364 [dir_watcher.py:finish():356] scan save: C:\Users\Meet Nagadia\Yolo\Agriculture Leaves\wandb\run-20220521_133924-ruz8ubi8\files\requirements.txt requirements.txt
+2022-05-21 13:41:17,097 INFO    SenderThread:16364 [dir_watcher.py:finish():356] scan save: C:\Users\Meet Nagadia\Yolo\Agriculture Leaves\wandb\run-20220521_133924-ruz8ubi8\files\wandb-metadata.json wandb-metadata.json
+2022-05-21 13:41:17,099 INFO    SenderThread:16364 [dir_watcher.py:finish():356] scan save: C:\Users\Meet Nagadia\Yolo\Agriculture Leaves\wandb\run-20220521_133924-ruz8ubi8\files\wandb-summary.json wandb-summary.json
+2022-05-21 13:41:17,104 INFO    SenderThread:16364 [sender.py:transition_state():389] send defer: 7
+2022-05-21 13:41:17,107 DEBUG   SenderThread:16364 [sender.py:send_request():246] send_request: poll_exit
+2022-05-21 13:41:17,113 DEBUG   HandlerThread:16364 [handler.py:handle_request():141] handle_request: defer
+2022-05-21 13:41:17,113 INFO    HandlerThread:16364 [handler.py:handle_request_defer():164] handle defer: 7
+2022-05-21 13:41:17,113 DEBUG   SenderThread:16364 [sender.py:send_request():246] send_request: defer
+2022-05-21 13:41:17,113 INFO    SenderThread:16364 [sender.py:send_request_defer():385] handle sender defer: 7
+2022-05-21 13:41:17,114 INFO    SenderThread:16364 [file_pusher.py:finish():145] shutting down file pusher
+2022-05-21 13:41:17,221 DEBUG   HandlerThread:16364 [handler.py:handle_request():141] handle_request: poll_exit
+2022-05-21 13:41:17,221 DEBUG   SenderThread:16364 [sender.py:send_request():246] send_request: poll_exit
+2022-05-21 13:41:17,332 DEBUG   HandlerThread:16364 [handler.py:handle_request():141] handle_request: poll_exit
+2022-05-21 13:41:17,333 DEBUG   SenderThread:16364 [sender.py:send_request():246] send_request: poll_exit
+2022-05-21 13:41:17,444 DEBUG   HandlerThread:16364 [handler.py:handle_request():141] handle_request: poll_exit
+2022-05-21 13:41:17,445 DEBUG   SenderThread:16364 [sender.py:send_request():246] send_request: poll_exit
+2022-05-21 13:41:17,556 DEBUG   HandlerThread:16364 [handler.py:handle_request():141] handle_request: poll_exit
+2022-05-21 13:41:17,557 DEBUG   SenderThread:16364 [sender.py:send_request():246] send_request: poll_exit
+2022-05-21 13:41:17,668 DEBUG   HandlerThread:16364 [handler.py:handle_request():141] handle_request: poll_exit
+2022-05-21 13:41:17,669 DEBUG   SenderThread:16364 [sender.py:send_request():246] send_request: poll_exit
+2022-05-21 13:41:17,780 DEBUG   HandlerThread:16364 [handler.py:handle_request():141] handle_request: poll_exit
+2022-05-21 13:41:17,780 DEBUG   SenderThread:16364 [sender.py:send_request():246] send_request: poll_exit
+2022-05-21 13:41:17,892 DEBUG   HandlerThread:16364 [handler.py:handle_request():141] handle_request: poll_exit
+2022-05-21 13:41:17,892 DEBUG   SenderThread:16364 [sender.py:send_request():246] send_request: poll_exit
+2022-05-21 13:41:18,004 DEBUG   HandlerThread:16364 [handler.py:handle_request():141] handle_request: poll_exit
+2022-05-21 13:41:18,004 DEBUG   SenderThread:16364 [sender.py:send_request():246] send_request: poll_exit
+2022-05-21 13:41:18,116 DEBUG   HandlerThread:16364 [handler.py:handle_request():141] handle_request: poll_exit
+2022-05-21 13:41:18,116 DEBUG   SenderThread:16364 [sender.py:send_request():246] send_request: poll_exit
+2022-05-21 13:41:18,228 DEBUG   HandlerThread:16364 [handler.py:handle_request():141] handle_request: poll_exit
+2022-05-21 13:41:18,228 DEBUG   SenderThread:16364 [sender.py:send_request():246] send_request: poll_exit
+2022-05-21 13:41:18,285 INFO    Thread-19 :16364 [upload_job.py:push():132] Uploaded file C:\Users\Meet Nagadia\Yolo\Agriculture Leaves\wandb\run-20220521_133924-ruz8ubi8\files\requirements.txt
+2022-05-21 13:41:18,299 INFO    Thread-17 :16364 [upload_job.py:push():132] Uploaded file C:\Users\Meet Nagadia\Yolo\Agriculture Leaves\wandb\run-20220521_133924-ruz8ubi8\files\config.yaml
+2022-05-21 13:41:18,324 INFO    Thread-18 :16364 [upload_job.py:push():132] Uploaded file C:\Users\Meet Nagadia\Yolo\Agriculture Leaves\wandb\run-20220521_133924-ruz8ubi8\files\output.log
+2022-05-21 13:41:18,339 INFO    Thread-20 :16364 [upload_job.py:push():132] Uploaded file C:\Users\Meet Nagadia\Yolo\Agriculture Leaves\wandb\run-20220521_133924-ruz8ubi8\files\wandb-summary.json
+2022-05-21 13:41:18,339 DEBUG   HandlerThread:16364 [handler.py:handle_request():141] handle_request: poll_exit
+2022-05-21 13:41:18,339 DEBUG   SenderThread:16364 [sender.py:send_request():246] send_request: poll_exit
+2022-05-21 13:41:18,351 INFO    Thread-16 :16364 [upload_job.py:push():132] Uploaded file C:\Users\Meet Nagadia\Yolo\Agriculture Leaves\wandb\run-20220521_133924-ruz8ubi8\files\conda-environment.yaml
+2022-05-21 13:41:18,449 DEBUG   HandlerThread:16364 [handler.py:handle_request():141] handle_request: poll_exit
+2022-05-21 13:41:18,450 DEBUG   SenderThread:16364 [sender.py:send_request():246] send_request: poll_exit
+2022-05-21 13:41:18,560 INFO    Thread-10 :16364 [sender.py:transition_state():389] send defer: 8
+2022-05-21 13:41:18,561 DEBUG   HandlerThread:16364 [handler.py:handle_request():141] handle_request: poll_exit
+2022-05-21 13:41:18,561 DEBUG   SenderThread:16364 [sender.py:send_request():246] send_request: poll_exit
+2022-05-21 13:41:18,561 DEBUG   HandlerThread:16364 [handler.py:handle_request():141] handle_request: defer
+2022-05-21 13:41:18,561 INFO    HandlerThread:16364 [handler.py:handle_request_defer():164] handle defer: 8
+2022-05-21 13:41:18,561 DEBUG   SenderThread:16364 [sender.py:send_request():246] send_request: defer
+2022-05-21 13:41:18,561 INFO    SenderThread:16364 [sender.py:send_request_defer():385] handle sender defer: 8
+2022-05-21 13:41:18,672 DEBUG   HandlerThread:16364 [handler.py:handle_request():141] handle_request: poll_exit
+2022-05-21 13:41:19,398 INFO    SenderThread:16364 [sender.py:transition_state():389] send defer: 9
+2022-05-21 13:41:19,399 DEBUG   SenderThread:16364 [sender.py:send_request():246] send_request: poll_exit
+2022-05-21 13:41:19,399 DEBUG   HandlerThread:16364 [handler.py:handle_request():141] handle_request: defer
+2022-05-21 13:41:19,399 INFO    HandlerThread:16364 [handler.py:handle_request_defer():164] handle defer: 9
+2022-05-21 13:41:19,399 DEBUG   SenderThread:16364 [sender.py:send_request():246] send_request: defer
+2022-05-21 13:41:19,399 INFO    SenderThread:16364 [sender.py:send_request_defer():385] handle sender defer: 9
+2022-05-21 13:41:19,400 INFO    SenderThread:16364 [sender.py:transition_state():389] send defer: 10
+2022-05-21 13:41:19,400 DEBUG   SenderThread:16364 [sender.py:send():232] send: final
+2022-05-21 13:41:19,400 DEBUG   SenderThread:16364 [sender.py:send():232] send: footer
+2022-05-21 13:41:19,400 DEBUG   HandlerThread:16364 [handler.py:handle_request():141] handle_request: defer
+2022-05-21 13:41:19,400 INFO    HandlerThread:16364 [handler.py:handle_request_defer():164] handle defer: 10
+2022-05-21 13:41:19,401 DEBUG   SenderThread:16364 [sender.py:send_request():246] send_request: defer
+2022-05-21 13:41:19,401 INFO    SenderThread:16364 [sender.py:send_request_defer():385] handle sender defer: 10
+2022-05-21 13:41:19,502 DEBUG   HandlerThread:16364 [handler.py:handle_request():141] handle_request: poll_exit
+2022-05-21 13:41:19,502 DEBUG   SenderThread:16364 [sender.py:send_request():246] send_request: poll_exit
+2022-05-21 13:41:19,502 INFO    SenderThread:16364 [file_pusher.py:join():150] waiting for file pusher
+2022-05-21 13:41:20,504 DEBUG   HandlerThread:16364 [handler.py:handle_request():141] handle_request: sampled_history
+2022-05-21 13:41:20,505 DEBUG   HandlerThread:16364 [handler.py:handle_request():141] handle_request: get_summary
+2022-05-21 13:41:20,505 DEBUG   HandlerThread:16364 [handler.py:handle_request():141] handle_request: shutdown
+2022-05-21 13:41:20,506 INFO    HandlerThread:16364 [handler.py:finish():806] shutting down handler
+2022-05-21 13:41:21,392 INFO    SenderThread:16364 [sender.py:finish():1110] shutting down sender
+2022-05-21 13:41:21,392 INFO    SenderThread:16364 [file_pusher.py:finish():145] shutting down file pusher
+2022-05-21 13:41:21,392 INFO    SenderThread:16364 [file_pusher.py:join():150] waiting for file pusher
+2022-05-21 13:41:21,423 INFO    WriterThread:16364 [datastore.py:close():279] close: C:\Users\Meet Nagadia\Yolo\Agriculture Leaves\wandb\run-20220521_133924-ruz8ubi8\run-ruz8ubi8.wandb
+2022-05-21 13:41:21,426 INFO    MainThread:16364 [internal.py:handle_exit():80] Internal process exited

@@ -1,0 +1,22 @@
+'WANDB_MODE' is not recognized as an internal or external command,
+operable program or batch file.
+^C
+python: can't open file 'C:\content\yolov5\detect.py': [Errno 2] No such file or directory
+[34m[1mdetect: [39m[22mweights=["'/content/yolov5/runs/train/exp/weights/best.pt'"], source='/content/test/test_yolo', data=yolov5\data\coco128.yaml, imgsz=[640, 640], conf_thres=0.25, iou_thres=0.45, max_det=1000, device=, view_img=False, save_txt=True, save_conf=True, save_crop=False, nosave=False, classes=None, agnostic_nms=False, augment=False, visualize=False, update=False, project=yolov5\runs\detect, name=exp, exist_ok=True, line_thickness=3, hide_labels=False, hide_conf=False, half=False, dnn=False
+fatal: cannot change to 'C:\Users\Meet': No such file or directory
+YOLOv5  2022-3-28 torch 1.11.0+cpu CPU
+Traceback (most recent call last):
+  File "C:\Users\Meet Nagadia\Yolo\Agriculture Leaves\yolov5\detect.py", line 251, in <module>
+    main(opt)
+  File "C:\Users\Meet Nagadia\Yolo\Agriculture Leaves\yolov5\detect.py", line 246, in main
+    run(**vars(opt))
+  File "C:\Project\envs\Yolo\lib\site-packages\torch\autograd\grad_mode.py", line 27, in decorate_context
+    return func(*args, **kwargs)
+  File "C:\Users\Meet Nagadia\Yolo\Agriculture Leaves\yolov5\detect.py", line 91, in run
+    model = DetectMultiBackend(weights, device=device, dnn=dnn, data=data, fp16=half)
+  File "C:\Users\Meet Nagadia\Yolo\Agriculture Leaves\yolov5\models\common.py", line 297, in __init__
+    pt, jit, onnx, xml, engine, coreml, saved_model, pb, tflite, edgetpu, tfjs = self.model_type(w)  # get backend
+  File "C:\Users\Meet Nagadia\Yolo\Agriculture Leaves\yolov5\models\common.py", line 478, in model_type
+    check_suffix(p, suffixes)  # checks
+  File "C:\Users\Meet Nagadia\Yolo\Agriculture Leaves\yolov5\utils\general.py", line 378, in check_suffix
+    assert s in suffix, f"{msg}{f} acceptable suffix is {suffix}"
